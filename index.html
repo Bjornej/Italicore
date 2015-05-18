@@ -12,42 +12,110 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/stylesheet.css">
+            <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
         <style>
-          body {
-            background-color:rgb(3,3,3);
-          }
+            body {
+                background-color: #f7f5f0;
+            }
+            * * {
+                box-sizing: border-box;
+            }
+    
+            .header {
+                padding: 10px;
+                height:40px;
+                position:static;
+                width:100%;
+                background-color:#EFEFEF;
+            }
+        
+            .language-selector {
+                font-size:15px;
+                float:right;
+                cursor:pointer;
+                color:rgb(144,144,144);
+            }
+            
+            .language-selector span {
+                padding: 2px 5px;
+            }
+    
+            .language-selector.open {
+                background-color:  #E2E2E2;
+            }
+    
+            .available-languages {
+            	max-height: 0;
+            	overflow: hidden;
+            
+            	/* Set our transitions up. */
+            	-webkit-transition: max-height 0.35s;
+            	-moz-transition: max-height 035s;
+            	transition: max-height 0.35s;
+            }
+            
+            .available-languages ul {
+                padding:0;
+            }
+            
+            .available-languages li {
+                list-style-type: none;
+                padding:2px 5px;
+            }
+  
+             .open .available-languages {
+                max-height:100px;
+            }
+    
+    
+    .chevron::before {
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.5em;
+}
 
-          .main {
-            font-family:"BillionStars";
-            text-align:center;
-            color:#D19F14;
-          }
-
-          .main h1 {
-              font-size:300px;
-              line-height:60px;
-              margin:0;
-              margin-top:200px;
-              font-weight:normal;
-          }
-
-          .main p {
-            margin:0;
-              font-size:80px;
-          }
+.chevron.bottom:before {
+	transform: rotate(135deg);
+}
         </style>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <div class="main">
-          <img src="img/logo.svg" style="height:400px;height:70vh;max-width:82vw;" />
-          <p>coming soon ...</p>
+        <div class="header">
+            <div class="language-selector">
+                <span>English (EN) <span class="chevron bottom"></span> </span>
+                <div class="available-languages">
+                    <ul>
+                        <li>Italian (IT)</li>
+                        <li>German (DE)</li>
+                        <li>Russian (RU)</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
+    <div class="body">
+
+    </div>
+
+<script type="text/javascript">
+    $(function(){
+        $(".language-selector").click(function(){
+            if($(".language-selector").hasClass("open")){
+                $(".language-selector").removeClass("open")
+            }else{
+                $(".language-selector").addClass("open")
+            }
+        });
+    })
+</script>
 
     </body>
 </html>
