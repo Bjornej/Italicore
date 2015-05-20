@@ -11,224 +11,81 @@
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+         <link rel="stylesheet" href="css/stylesheet.css">   
         <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
-        <style>
-            body {
-                background-color: #f7f5f0;
-                font-family:"Folio Light", 'Helvetica Neue', Arial, Helvetica, sans-serif; 
-                font-size-adjust:0.43;
-                 font-weight:200; 
-                 font-style:normal
-            }
-            * * {
-                box-sizing: border-box;
-            }
-    
-            .header {
-     top: 0;
-  padding: 10px;
-  height: 40px;
-  position: fixed;
-                width:100%;
-                background-color:#EFEFEF;
-            }
-        
-            .language-selector {
-                font-size:15px;
-                position: fixed;
-                right: 20px;
-                cursor:pointer;
-                color:rgb(144,144,144);
-            }
-            
-            .language-selector span {
-                padding: 2px 5px;
-            }
-    
-            .language-selector.open {
-                background-color:  #E2E2E2;
-            }
-    
-            .available-languages {
-            	max-height: 0;
-            	overflow: hidden;
-            
-            	/* Set our transitions up. */
-            	-webkit-transition: max-height 0.35s;
-            	-moz-transition: max-height 035s;
-            	transition: max-height 0.35s;
-            }
-            
-            .available-languages ul {
-                padding:0;
-            }
-            
-            .available-languages li {
-                list-style-type: none;
-                padding:2px 5px;
-            }
-  
-             .open .available-languages {
-                max-height:100px;
-            }
-    
-    
-    .chevron::before {
-    	border-style: solid;
-    	border-width: 0.15em 0.15em 0 0;
-    	content: '';
-    	display: inline-block;
-    	height: 0.45em;
-    	left: 0.15em;
-    	position: relative;
-    	top: 0.15em;
-    	transform: rotate(-45deg);
-    	vertical-align: top;
-    	width: 0.5em;
-}
-
-.chevron.bottom:before {
-	transform: rotate(135deg);
-}
-
-.description {
-    width:90%;
-    margin:20px auto;
-    clear:both;
-}
-
-.bodoni {
-    font-family:'Bodoni W01 Book_709611';
-    font-size:46px;
-}
-
-#mti_wfs_colophon {
-    display:none !important;
-}
-
-.images {
-    width:90%;
-    margin:0 auto;
-}
-
-.images img {
-  width: 33%;
-  padding: 2px 5px;
-}
-
-img {
-  border-color: white /* for an acceptable IE result*/;
-  border-width: 15px;
-  -moz-border-image: url(http://tobias-reinhardt.de/img/frame.png) 15 stretch;
-  border-image: url(http://tobias-reinhardt.de/img/frame.png) 15 stretch;
-  border-style: solid;
-  margin: auto;
-}
-
-.description.centered {
-    padding-top:40px;
-}
-
-.prodotti .bodoni {
-    text-align: center;
-}
-
-.prodotti figure{
-    position:relative;
-    width:43%;
-    display:inline-block;
-    cursor:pointer;
-}
-
-.prodotti figure img {
-    width:100%;
-}
-
-.prodotti figcaption {
-    color:black;
-    position:absolute;
-    bottom:20px;
-    left:20px;
-    font-size:20px;
-}
-        </style>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300italic,300,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     </head>
-    
     <body>
-        <link rel="stylesheet" href="http://f.fontdeck.com/s/css/D8Fz3XWt+VC0VDejQHe7Mks5Qzc/italicore.com/56609.css" type="text/css"
-        />
-        <script type="text/javascript" src="http://fast.fonts.net/jsapi/6bf12646-7598-480a-8c99-4302af082f77.js"></script>
-        <div class="header">
-            <div class="language-selector">
-                <span>English (EN)
-                    <span class="chevron bottom"></span>
-                </span>
-                <div class="available-languages">
-                    <ul>
-                        <li>Italian (IT)</li>
-                        <li>German (DE)</li>
-                        <li>Russian (RU)</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="logo">
+            <img src="img/italicore.jpg"></img>
         </div>
-        <div class="body">
-            <div class="description">
-                <img src="img/giuseppe.jpg" style="float:right;height:400px"></img>
-                <div>
-                    <h3 class="bodoni">Falegnameria Giuseppe</h3>In una stretta stradina bianca, svoltato un angolo, c’è la piccola bottega di Giuseppe, maestro
-                    nell’arte dell’intaglio del legno d’ulivo.
-                    <br />
-                    <br />Giuseppe, da 50 anni passa le sue giornate ad accarezzare e a plasmare con forza il legno, ricavando, con le sue mani nodose,
-                    meravigliosi utensili e oggetti per la casa in ulivo, tesoro della terra di Puglia da millenni.</div>
-            </div>
-            <div class="description centered">Ogni sua creazione è un pezzo unico, frutto di creatività, esperienza, passione e tempo. Ogni sua creazione, così come l’albero
-                di ulivo stesso, è un inno alla bellezza e alla durabilità. Eleganti e ricercati, ma anche semplici e funzionali, gli oggetti
-                prodotti dalla maestria di Giuseppe sono in grado di incantare e stupire, adattandosi ad ogni casa, dalla più classica alla
-                più moderna.</div>
-            <div class="images">
-                <img src="img/morsa.jpg"></img>
-                <img src="img/ulivo2.jpg"></img>
-                <img src="img/utensile.jpg"></img>
-            </div>
-            <div></div>
+        
+        <div class="title">ITALIAN HANDMADE EXCELLENCE  <span> </span></div>
             
-            <div class="prodotti">
-                <h3 class="bodoni">I prodotti</h3>
-                <figure>
-                    <img src="img/RASOIO.jpg"></img>
-                    <figcaption>IL RASOIO</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/SCACCHIMOD.jpg"></img>
-                    <figcaption>LA SCACCHIERA</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/Tagliasigari.jpg"></img>
-                    <figcaption>IL TAGLIASIGARI</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/Tagliasigari.jpg"></img>
-                    <figcaption>IL TAGLIERE</figcaption>
-                </figure>
-            </div>
+        <div class="links">
+            <a href="index.html" class="current">ITALICORE</a>
+            <a href="masters.html">OUR MASTERS</a>
+               <a href="boutique.html">BOUTIQUE</a> 
+<a href="contacts.html">CONTACTS</a>
+    <a href="languages.html">LANGUAGES</a>
+        </div>
+        
+        <div class="hero">
+            <figure>
+                <img src="img/main.jpg"></img>
+                <figcaption>ITALICORE</figcaption>
+            </figure>
             
         </div>
-        <script type="text/javascript">
-            $(function(){
-                $(".language-selector").click(function(){
-                    if($(".language-selector").hasClass("open")){
-                        $(".language-selector").removeClass("open")
-                    }else{
-                        $(".language-selector").addClass("open")
-                    }
-                });
+        
+        <h2>Our Mission</h2>
+        
+        <span class="copy">
+            We want to give all beauty and excellence lovers an Italian product made of mastery and history, with the best and more natural digital purchase experience.
+        </span>
+        
+        <hr />
+        
+            <h2>Our Vision</h2>
+        
+        <span class="copy">
+            We want to be the core of an entire Italian culture of excellence, passion and hard work. 
+We want to combine tradition of the past and tools of the future to make everyone discover the truest and highest Made in Italy and to protect a knowledge that represents one of Italy's soul and cannot be forgotten.
+        </span>    
+        
+        <div class="hero">
+            <img src="img/hands.jpeg"></img>
+        </div>
+                    <h2>Our Values</h2>
+        
+        <h4>LOVE</h4>
+        
+        <span class="copy left">
+            Is what drives our job and that of our Masters: it is a passion that "moves the sun and other stars". At Italicore, we are in love with Italian excellence and beautiful things; we are in love with Italy and with those shops still full of the perfume of secular traditions passed through many generations.
+        </span>
+        
+        <h4>EXPERIENCE</h4>
                 
-                $(".prodotti img").click(function(){
-                    window.location.href="prodotto.html";
-                })
-            })
-        </script>
+        <span class="copy left">
+            We believe in the value of every handmade stitch, of every hammer blow, of every little engraving, of every secret stolen by the eyes. Every Italicore Master knows the taste of effort: it is part of a metier is learnt by the time, with great patience. This truly makes the difference, and Italicore wants to share with everyone, the beauty and the inestimability of a long wait and of a priceless passion.
+        </span>
+        
+        <h4>TECHNOLOGY</h4>
+        
+        <span class="copy left">
+            At Italicore, we hold the hand of the past but, still we stare at the future. We combine tradition and innovation to grant to an excellent product to reach everyone, everywhere, with a simple "click".
+        </span>
+        
+        <h4>REBIRTH</h4>
+        
+        <span class="copy left">
+            Italicore Team strongly believes in the value of the craftsmanship and in its capacity to be one of the leading force in the Italian economy. For this reason, we want to offer our Italian Masters the possibility to show the world the beautiful and authentic Made in Italy .
+        </span>
+        
+              <div class="logo small">
+            <img src="img/italicore.jpg"></img>
+        </div>
+        
     </body>
-
 </html>
