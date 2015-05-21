@@ -124,3 +124,109 @@ h2 {
   text-align: left;
   margin-left:0;
 }
+
+.masters figure {
+  margin: 0;
+  width: 32%;
+  float: left;
+  padding: 27px;
+  box-sizing: border-box;
+}
+
+.masters img {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+
+.masters figcaption {
+    text-align: center;
+    font-weight: 100;
+    padding-top: 5px;
+}
+
+.masters a {
+  text-decoration: initial;
+  color:inherit;
+}
+
+.text {
+  width:50%;
+  box-sizing: border-box;
+  padding:10px;
+  float:left;
+}
+
+.text span {
+  margin-top: 40px;
+  text-align:center;
+  display:block;
+  padding:25px;
+  font-weight: 100;
+}
+
+.contact.form form {
+  float:right;
+  width:50%;
+}
+
+.contact.form form > div{
+  width:100%;
+  margin-top:27px;
+}
+
+.contact.form form > div span{
+  width:100%;
+  display:block;
+  font-weight: 100;
+}
+
+.contact.form form > div input{
+  width:100%;
+  display:block;
+  background-color: #fafafa;
+    border: 1px solid #C5C5C5;
+  height:34px;
+}
+
+.contact.form form > div textarea{
+  width:100%;
+  background-color: #fafafa;
+    border: 1px solid #C5C5C5;
+  display:block;
+}
+
+.half {
+  box-sizing: border-box;
+  width: 50%;
+ float:left;
+   font-weight: 100;
+
+ }
+ 
+ .half.first {
+  padding-right: 15px;
+
+ }
+ 
+ .mailform {
+   margin-top: 75px !important;
+ }
+ 
+ .contact.form button {
+     margin: 20px 0;
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px 37px;
+  font-weight:600;
+  -webkit-transition: background-color 0.25s linear;
+    -moz-transition: background-color 0.25s linear;
+    -o-transition: background-color 0.25s linear;
+    -ms-transition: background-color 0.25s linear;
+    transition: background-color 0.25s linear;
+ }
+ 
+  .contact.form button:hover {
+    color:white;
+    background-color: black;
+ }
