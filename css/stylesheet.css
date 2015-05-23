@@ -213,7 +213,7 @@ h2 {
    margin-top: 75px !important;
  }
  
- .contact.form button {
+ .bigButton {
      margin: 20px 0;
   background-color: white;
   border: 2px solid black;
@@ -226,7 +226,45 @@ h2 {
     transition: background-color 0.25s linear;
  }
  
-  .contact.form button:hover {
+   .bigButton:hover {
     color:white;
     background-color: black;
+ }
+ 
+ .products figure {
+     width: 25%;
+ }
+ 
+ .products img {
+   object-fit: cover;
+
+ }
+ 
+ .products figcaption{
+   font-weight:100;
+   text-align:center;
+ }
+ 
+ .product .product--image {
+   float:left;
+   width:33%;
+ }
+ 
+ .product span {
+   font-weight: 100;
+ }
+ 
+ .product > div {
+   width:60%;
+   float:right;
+ }
+ 
+ .backboutique {
+     text-decoration: none;
+  color: black;
+  font-weight: 100;
+ }
+ 
+ .backboutique:before{
+   content:"\2190  ";
  }
